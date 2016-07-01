@@ -3,13 +3,6 @@
 
 ### Objective: Build a fullstack MVP from scratch in 36 hours
 
-### Getting Started:
-
-1. Brainstorm Project 
-2. Evaluate Tech Stack 
-3. Architect App 
-4. Build Project + Commit Often 
-
 ## Basic Requirements
 - [ ] Fork the repo
   - [ ] Brainstorm an idea (implement a technology, build a product, make art, etc).
