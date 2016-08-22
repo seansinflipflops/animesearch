@@ -1,7 +1,7 @@
 
 # MVP (Solo) Project
 
-### Objective: Build a fullstack MVP from scratch in 36 hours
+### Objective: Build a fullstack MVP from scratch in 32 hours
 
 ## Basic Requirements
 - [ ] Fork the repo
