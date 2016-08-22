@@ -14,7 +14,7 @@
 - [ ] Code. Commit. Repeat. 
 - [ ] Deploy MVP on Heroku 
 - [ ] Write and include documentation on how to run application. 
-- [ ] Prepare for pitch @ demo on Saturday at 4:30pm.
+- [ ] Prepare for pitch @ demo Tomorrow @ 6:30pm.
 
 
 ## Extra Credit
