@@ -1,0 +1,26 @@
+{
+  "name": "mvp-project",
+  "version": "1.0.0",
+  "description": "### Objective: Build a full-stack MVP from scratch in under 2 Days",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seansinflipflops/MKS-solo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seansinflipflops/MKS-solo/issues"
+  },
+  "homepage": "https://github.com/seansinflipflops/MKS-solo#readme",
+  "dependencies": {
+    "angular": "^1.5.9",
+    "angular-route": "^1.5.9",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
