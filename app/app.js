@@ -1,21 +1,50 @@
-var app = angular.module('mangaSearch', [])
+var app = angular.module('animeSearch', []);
 
-app.directive('myOnKeyDownCall', function () {
-    return function (scope, element, attrs) {
-        element.bind("keydown keypress", function (event) {            
-                scope.$apply(function (){
-                    scope.$eval(attrs.ngEnter);
-                });
-                event.preventDefault();
-        });
-    };
+app.controller('searchCtrl', function($scope, $http) {
+	$scope.anime = {};
+
+	$scope.animeCatcher = function(searchTitle) {
+		console.log('animeCatcher')
+		$http({
+			
+			method: 'GET',
+		  url: 'https://hummingbird.me/api/v1/anime/' + searchTitle,
+		  headers: { 
+		  	'postman-token': '0668c5db-21a7-64ac-702e-72b4f40f8871',
+		     'cache-control': 'no-cache',
+		     'Accept': '*/*'
+			// 'Accept-Encoding': gzip, de,
+			//"Connection": 'keep-alive',
+			//"Host": 'hummingbird.me',
+			//'User-Agent': 'HTTPie/0.9.6'} 
+		   }
+		 })
+			.then(function(data) {
+				console.log(data);
+			}).catch(function(error) {
+				console.log(error);
+			})
+		// var options = { method: 'GET',
+	 //  url: 'https://hummingbird.me/api/v1/anime/naruto',
+	 //  headers: 
+	 //   { 'postman-token': '0668c5db-21a7-64ac-702e-72b4f40f8871',
+	 //     'cache-control': 'no-cache' } };
+
+		// request(options, function (error, response, body) {
+		//   if (error) throw new Error(error);
+
+ 	// 	 console.log(body);
+		// });
+
+	};
 });
 
-app.controller('search', function($scope, $http) {
-	$scope.callRestService= function() {
-  $http({method: 'GET', url: '/someUrl'}).
-    success(function(data, status, headers, config) {
-         $scope.results.push(data);  //retrieve results and add to existing results
-    })
-}
-});
+
+
+// jsonp('https://hummingbird.me/api/v1/anime/' + searchTitle + '?callback=JSON_CALLBACK')
+// 			.success(function(data) {
+// 				console.log(data);
+// 			}).error(function(data, status, headers, config) {
+// 				$scope.statusval = status;
+// 				console.log(data,)
+// 			})

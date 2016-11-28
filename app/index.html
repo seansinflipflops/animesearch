@@ -1,16 +1,22 @@
 <!doctype html>
 <head>
-	<title>MangaSearch</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>	
+	<title>Anime Search</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
 </head>
 
-<body ng-app="mangaSearch">
-	<h1>Search For Manga</h1>
-	<div class="search">
-		 <input type="text" my-on-key-down-call="callRestService()" placeholder="Manga?">
+<body ng-app="animeSearch">
+	<h1>Search For Anime</h1>
+	<div class="search" ng-controller="searchCtrl">
+		<input type="text" ng-model="searchTitle" placeholder ="Anime" />
+		<input type="submit" ng-click="animeCatcher(searchTitle)" value="search" />
 
+		<div class="anime" ng-repeat="anime in anime.list">
+			<h2>{{anime}}</h2>
+			<td>{{anime.cover_image}}</td>
+		</div>
 	</div>
 
-	<script src="app/app.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>
