@@ -27,8 +27,16 @@ a:hover {
 
 
 #image {
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
 	padding-top: -500px;
 	border-radius: 10px;
 	border-color: white;
 	border-style: solid;
+}
+
+#image:hover {
+	opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+
 }
