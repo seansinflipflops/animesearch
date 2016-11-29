@@ -13,6 +13,6 @@ app.post('/anime', function(req, resp) {
 	});
 });
 
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
 
 module.exports = app;
