@@ -1,0 +1,34 @@
+body {
+	background: black;
+	color: white;
+	text-align: center; 
+	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 500%;
+}
+
+h2 {
+	font-size: 350%;
+}
+
+a:link {
+	color:white;
+}
+
+a:visited {
+	color:white;
+}
+
+a:hover {
+	color:grey;
+}
+
+
+#image {
+	padding-top: -500px;
+	border-radius: 10px;
+	border-color: white;
+	border-style: solid;
+}
