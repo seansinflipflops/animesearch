@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-	<title>Anime Search</title>
+	<title>Anime Info</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/then-request/2.2.0/request.js"></script>
 	<script src="https://cdn.jsdelivr.net/angular.slugify/1.0.0/angular-slugify.js"></script>
@@ -8,12 +8,14 @@
 </head>
 
 <body ng-app="animeSearch">
-	<h1 id="head">Search For Anime</h1>
+	<h1 id="head">Search for Anime</h1>
 	<div class="search" ng-controller="searchCtrl">
 		<input type="text" ng-model="searchTitle" placeholder ="Anime" />
 		<input type="submit" ng-click="animeCatcher(searchTitle)" value="search" />
 		<a ng-href="{{anime.url}}"><h2 id="title">{{anime.title}}</h2></a>
 		<a ng-href="{{anime.url}}"><img id="image" ng-src='{{anime.image}}'></a>
+		<p>Click picture for more info!</p>
+		<p>{{anime.synopsis}}</p>
 	</div>
 
 	<script src="app.js"></script>
