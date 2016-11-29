@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "slug": "^0.9.1"
+    "slug": "^0.9.1",
+    "localStorageDB": "localstoragedb#^2.3.1"
   }
 }

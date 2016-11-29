@@ -17,3 +17,10 @@ app.post('/anime', function(req, resp) {
 app.listen(process.env.PORT || 8000);
 
 module.exports = app;
+
+//render the image 
+//get the tag
+//make a new call to the server
+//call the function
+//make a query string
+//send to database
