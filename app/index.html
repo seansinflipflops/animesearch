@@ -10,8 +10,8 @@
 	<div class="search" ng-controller="searchCtrl">
 		<input type="text" ng-model="searchTitle" placeholder ="Anime" />
 		<input type="submit" ng-click="animeCatcher(searchTitle)" value="search" />
-
-		<h2 class="anime" ng-repeat="anime in anime">{{anime.title}}</h2>
+		<h2>{{anime.title}}</h2>
+		<img ng-src='{{anime.image}}'>
 	</div>
 
 	<script src="app.js"></script>

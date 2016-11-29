@@ -12,7 +12,8 @@ app.controller('searchCtrl', function($scope, $http) {
 		 })
 			.then(function(data) {
 				var prsed = JSON.parse(data.data);
-				console.log(prsed.title);
+				$scope.anime.title = prsed.title;
+				$scope.anime.image = prsed.cover_image;
 			}).catch(function(error) {
 				console.log(error);
 			})
