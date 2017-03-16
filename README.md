@@ -1,5 +1,7 @@
-AnimeSearch
+# AnimeSearch
 
+##Quick start
+```
 npm i
-
-npm run server/server.js
+npm start
+```
