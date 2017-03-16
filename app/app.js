@@ -9,10 +9,10 @@ app.controller('searchCtrl', function($scope, $http) {
 		  data: { anime: searchTitle }
 		 })
 			.then(function(data) {
-				var prsed = JSON.parse(data.data);
-				$scope.anime.title = prsed.title;
-				$scope.anime.image = prsed.cover_image;
-				$scope.anime.url = prsed.url;
+				var info = JSON.parse(data.data);
+        var prsed = info.data[0].attributes
+				$scope.anime.title = prsed.canonicalTitle;
+				$scope.anime.image = prsed.posterImage.medium;
 				$scope.anime.synopsis = prsed.synopsis;
 			})
 			.catch(function(error) {

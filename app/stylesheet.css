@@ -1,33 +1,59 @@
 body {
 	background: black;
 	color: white;
-	text-align: center; 
-	font-family: 'Nosifer', cursive;
+	text-align: center;
 }
 
 h1 {
-	font-size: 500%;
+	font-size: 120px;
+  margin-bottom: -20px;
+  margin-top: -20px;
+  font-family: 'Baloo Bhaina', cursive;
+}
+
+.search ul {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.inputs {
+  margin-bottom: -40px;
 }
 
 h2 {
-	font-size: 350%;
-	font-family: 'Trade Winds', cursive;
+  font-size: 85px;
+  font-family: 'Trade Winds', cursive;
+  margin-bottom: -5px;
 }
 
 a:link {
 	color:white;
+  text-decoration: none;
+
 }
 
 a:visited {
 	color:white;
+  text-decoration: none;
+
 }
 
 a:hover {
 	color:grey;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 p {
 	font-family: 'Trade Winds', cursive;
+}
+
+#synopsis {
+  padding-left: 300px;
+  padding-right: 300px;
+  text-align: left;
 }
 
 #image {
