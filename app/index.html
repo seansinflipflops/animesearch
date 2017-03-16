@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<head>
-	<title>Anime Info</title>
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Trade+Winds" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
+  <head>
+  	<title>Anime Info</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Trade+Winds" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
 
-<body ng-app="animeSearch">
-	<div class="search" ng-controller="searchCtrl">
-    <ul>
-      <h1 id="head">Anime Info</h1>
-      <div class="inputs">
-    		<input type="text" ng-model="searchTitle" placeholder ="Anime" />
-    		<input type="submit" ng-click="animeCatcher(searchTitle)" value="search" />
-      </div>
-  		<a ng-href="#"><h2 id="title">{{anime.title}}</h2></a>
-  		<a ng-href="#"><img id="image" ng-src='{{anime.image}}'></a>
-  		<br>
-      <br>
-  		<p id="synopsis">{{anime.synopsis}}</p>
-    </ul>
-	</div>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/then-request/2.2.0/request.js"></script>
-	<script src="https://cdn.jsdelivr.net/angular.slugify/1.0.0/angular-slugify.js"></script>
-	<script src="app.js"></script>
-</body>
+  <body ng-app="animeSearch">
+  	<div class="search" ng-controller="searchCtrl">
+      <ul>
+        <h1 id="head">Anime Info</h1>
+        <div class="inputs">
+      		<input type="text" ng-model="searchTitle" placeholder ="Anime" />
+      		<input type="submit" ng-click="animeCatcher(searchTitle)" value="search" />
+        </div>
+    		<a ng-href="#"><h2 id="title">{{anime.title}}</h2></a>
+    		<a ng-href="#"><img id="image" ng-src='{{anime.image}}'></a>
+    		<br>
+        <br>
+    		<p id="synopsis">{{anime.synopsis}}</p>
+      </ul>
+  	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/then-request/2.2.0/request.js"></script>
+  	<script src="https://cdn.jsdelivr.net/angular.slugify/1.0.0/angular-slugify.js"></script>
+  	<script src="app.js"></script>
+  </body>
 </html>
