@@ -1,6 +1,6 @@
 # AnimeSearch
 
-##Quick start
+## Quick start
 ```
 npm i
 npm start
